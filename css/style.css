@@ -1,0 +1,207 @@
+
+.main{
+    background-color: #383a3d;
+    height: 100%;
+}
+
+html{
+    background-color: #383a3d;
+}
+
+#chart_div{
+    background-color: #383a3d;
+    height: 80vh;
+    width: 100%;
+}
+
+
+.btn-row button{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    background-color: #383a3d;
+    color: aqua;
+  width: 150px;
+  height: 40px;
+    padding: 5px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    appearance: none;
+    margin-top: 10px;
+}
+
+.btn-row button:hover{
+    background-color: aqua;
+    color: #383a3d;
+    border: 2px solid #383a3d;
+    font-weight: bold;
+}
+
+button:active, button:focus {
+    background-color: aqua;
+    color: #383a3d;
+    border: 2px solid #383a3d;
+    font-weight: bold;
+    box-shadow: none;
+  }
+
+.btn-row{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bulb-row{
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.bulb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 5px solid gray;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  #on-btn{
+    background-color: green;
+    width: 100px;
+    height: 40px;
+border-radius: 10px; 
+color: white;
+font-size: 15px;
+font-weight: bold;
+ }
+
+ #off-btn{
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+border-radius: 10px; 
+color: white;
+font-size: 15px;
+font-weight: bold;
+ }
+
+  .bulb.on {
+    background-color: green;
+  }
+  .bulb.off {
+    background-color: red;
+  }
+  
+
+@media (max-width: 768px) {
+    .spinner {
+        /* styles for mobile devices */
+        width: 50px;
+        height: 50px;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -40%);
+      }
+    #chart_div {
+        height: 30vh;
+        width: 100%;
+      }
+      .main{
+          background-color: #383a3d;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+      }
+  
+      .btn-row button{
+          width: 60px;
+          font-size:10px ;
+          padding: 5px 5px;
+          flex-basis: calc(50% - 10px);
+      }
+  
+      .btn-row{
+          margin-top: 30px;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+  }
+  #chart_div .google-visualization-title {
+    text-align: center;
+  }
+  
+  /* Adjust the size of the chart for even smaller screens */
+  @media (max-width: 480px) {
+    .spinner {
+        /* styles for mobile devices */
+        width: 50px;
+        height: 50px;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -40%);
+      }
+    #chart_div {
+        height: 30vh;
+        width: 100%;
+      }
+      .main{
+          background-color: #383a3d;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+      }
+  
+      .btn-row button{
+          width: 60px;
+          font-size:10px ;
+          padding: 5px 5px;
+          flex-basis: calc(50% - 10px);
+      }
+  
+      .btn-row{
+          margin-top: 30px;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid aqua;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
